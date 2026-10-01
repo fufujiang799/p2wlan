@@ -19,6 +19,8 @@ import '../features/diagnostics/diagnostics_page.dart';
 import '../features/nodes/nodes_page.dart';
 import '../features/rooms/rooms_page.dart';
 import '../features/settings/settings_page.dart';
+import '../features/meeting/meeting_page.dart';
+import '../features/tools/tools_page.dart';
 import '../features/update/update_banner.dart';
 import '../shared/layout/app_breakpoints.dart';
 import '../shared/widgets/app_nav_rail.dart';
@@ -283,6 +285,14 @@ class _P2WlanShellState extends State<P2WlanShell> {
         capabilities: widget.capabilities,
         embedded: true,
         showHeader: showPageHeader,
+      ),
+      P2WlanSection.meeting => MeetingPage(
+        settingsStore: widget.settingsStore,
+        statusStore: widget.statusStore,
+      ),
+      P2WlanSection.tools => ToolsPage(
+        settingsStore: widget.settingsStore,
+        statusStore: widget.statusStore,
       ),
       P2WlanSection.settings => SettingsPage(
         settingsStore: widget.settingsStore,

@@ -22,6 +22,7 @@ import '../../core/state/settings_store.dart';
 import '../../core/state/status_store.dart';
 import '../../core/update/update_models.dart';
 import '../../core/update/update_service.dart';
+import '../../features/meeting/models.dart' show VideoQuality;
 import '../../shared/widgets/app_back_button.dart';
 import '../../shared/widgets/app_select.dart';
 
@@ -33,6 +34,8 @@ part 'settings_page/account.dart';
 part 'settings_page/application.dart';
 part 'settings_page/advanced.dart';
 part 'settings_page/developer.dart';
+part 'settings_page/meeting.dart';
+part 'settings_page/tools.dart';
 part 'settings_page/actions.dart';
 
 typedef _SettingsStatusProjection = ({

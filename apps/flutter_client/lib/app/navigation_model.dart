@@ -16,6 +16,8 @@ enum P2WlanSection {
   home(Icons.home_outlined),
   devices(Icons.devices_outlined),
   interconnect(Icons.lan_outlined),
+  meeting(Icons.videocam_rounded),
+  tools(Icons.build_rounded),
   troubleshooting(Icons.monitor_heart_outlined),
   settings(Icons.settings_outlined);
 
@@ -28,22 +30,23 @@ enum P2WlanSection {
     home,
     devices,
     interconnect,
+    meeting,
+    tools,
     settings,
   ];
 
-  /// Permanent compact (phone) bottom-bar destinations — four.
-  /// Troubleshooting is deliberately absent: it is entered from the shell
-  /// overflow menu today and from Home's "check issues" path.
+  /// Permanent compact (phone) bottom-bar destinations — five now.
   static const List<P2WlanSection> mobilePrimary = [
     home,
     devices,
     interconnect,
+    tools,
     settings,
   ];
 
   /// Desktop sidebar grouping.
   static const List<List<P2WlanSection>> sidebarGroups = [
-    [home, devices, interconnect],
+    [home, devices, interconnect, meeting, tools],
     [settings],
   ];
 }

@@ -7,6 +7,8 @@ enum SettingsCategory {
   general,
   accountNetwork,
   advancedNetwork,
+  meeting,
+  tools,
   developer;
 
   /// User-facing label in the given locale.
@@ -16,6 +18,8 @@ enum SettingsCategory {
       SettingsCategory.accountNetwork => strings.settingsSectionAccountNetwork,
       SettingsCategory.advancedNetwork =>
         strings.settingsSectionAdvancedNetwork,
+      SettingsCategory.meeting => strings.settingsSectionMeeting,
+      SettingsCategory.tools => strings.settingsSectionTools,
       SettingsCategory.developer => strings.settingsSectionDeveloperDiagnostics,
     };
   }
@@ -25,6 +29,8 @@ enum SettingsCategory {
       SettingsCategory.general => Icons.tune_rounded,
       SettingsCategory.accountNetwork => Icons.admin_panel_settings_outlined,
       SettingsCategory.advancedNetwork => Icons.router_outlined,
+      SettingsCategory.meeting => Icons.videocam_rounded,
+      SettingsCategory.tools => Icons.build_rounded,
       SettingsCategory.developer => Icons.info_outline_rounded,
     };
   }
@@ -40,6 +46,8 @@ List<SettingsCategory> visibleSettingsCategories(PlatformCapabilities caps) {
   if (caps.canActAsLocalVpnNode) {
     categories.add(SettingsCategory.advancedNetwork);
   }
+  categories.add(SettingsCategory.meeting);
+  categories.add(SettingsCategory.tools);
   categories.add(SettingsCategory.developer);
   return categories;
 }

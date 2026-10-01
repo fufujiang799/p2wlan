@@ -379,6 +379,8 @@ Widget _categoryContent(
       state: state,
       strings: strings,
     ),
+    SettingsCategory.meeting => _MeetingSection(strings: strings),
+    SettingsCategory.tools => _ToolsSection(strings: strings),
     SettingsCategory.developer => _DeveloperSection(
       state: state,
       strings: strings,

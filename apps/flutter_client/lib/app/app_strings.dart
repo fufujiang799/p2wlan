@@ -611,6 +611,8 @@ class AppStrings {
       isZh ? '账户与连接' : 'Account & Connection';
   String get settingsSectionAdvancedNetwork =>
       isZh ? '高级网络' : 'Advanced Network';
+  String get settingsSectionMeeting => isZh ? '会议' : 'Meeting';
+  String get settingsSectionTools => isZh ? '工具箱' : 'Tools';
   String get settingsSectionDeveloperDiagnostics =>
       isZh ? '诊断与关于' : 'Diagnostics & About';
   // --- Settings category / IA ---
@@ -1290,4 +1292,48 @@ class AppStrings {
       AppLanguage.simplifiedChinese => simplifiedChinese,
     };
   }
+
+  // --- Meeting / Conference ---
+  String get meetingTitle => isZh ? '视频会议' : 'Video Conference';
+  String get meetingSubtitle => isZh ? '多人实时音视频会议' : 'Multi-party real-time audio/video conference';
+  String get meetingVideo => isZh ? '视频' : 'Video';
+  String get meetingAudio => isZh ? '音频' : 'Audio';
+  String get meetingScreenShare => isZh ? '屏幕共享' : 'Screen Share';
+  String get meetingLeave => isZh ? '离开会议' : 'Leave Meeting';
+  String get meetingChatTitle => isZh ? '聊天' : 'Chat';
+  String get meetingChatHint => isZh ? '输入消息...' : 'Type a message...';
+  String get meetingMessages => isZh ? '条消息' : 'messages';
+  String get meetingNetworkWarning => isZh ? '网络质量下降' : 'Network degraded';
+  String get meetingNetworkCritical => isZh ? '网络质量差' : 'Network poor';
+  String get meetingNetworkDegradeTitle => isZh ? '网络质量较差' : 'Poor network quality';
+  String get meetingNetworkDegradeBody => isZh ? '检测到网络延迟较高或丢包严重，是否自动降低画质以改善体验？' : 'Network latency is high or packet loss is severe. Auto-reduce video quality?';
+  String get meetingDowngradeConfirm => isZh ? '降低画质' : 'Downgrade';
+  String get meetingVideoSubtitle => isZh ? '开启或关闭摄像头' : 'Toggle camera';
+  String get meetingAudioSubtitle => isZh ? '开启或关闭麦克风' : 'Toggle microphone';
+
+  // --- Network Tools ---
+  String get toolsTitle => isZh ? '内网工具箱' : 'Network Tools';
+  String get toolsSubtitle => isZh ? '设备管理、测速、文件传输和 HTTP 服务' : 'Device management, speed test, file transfer, and HTTP server';
+  String get toolsQuickActions => isZh ? '快捷操作' : 'Quick Actions';
+  String get toolsOnlineDevices => isZh ? '台在线' : ' online';
+  String get toolsSpeedTest => isZh ? '测速' : 'Speed Test';
+  String get toolsFileTransfer => isZh ? '文件传输' : 'File Transfer';
+  String get toolsHttpServer => isZh ? 'HTTP 服务' : 'HTTP Server';
+  String get toolsNoDevices => isZh ? '暂无在线设备' : 'No online devices';
+  String get toolsSelectFile => isZh ? '选择文件' : 'Select File';
+  String get toolsSelectFileHint => isZh ? '点击选择要传输的文件' : 'Tap to select a file';
+  String get toolsBrowse => isZh ? '浏览' : 'Browse';
+  String get toolsSend => isZh ? '发送' : 'Send';
+  String get toolsSending => isZh ? '发送中...' : 'Sending...';
+  String get toolsFileTransferSuccess => isZh ? '文件传输成功' : 'File transfer successful';
+  String get toolsHttpServerTitle => isZh ? '本地 HTTP 文件服务器' : 'Local HTTP File Server';
+  String get toolsHttpRunning => isZh ? '运行中' : 'Running';
+  String get toolsHttpStopped => isZh ? '已停止' : 'Stopped';
+  String get toolsHttpPort => isZh ? '端口' : 'Port';
+  String get toolsHttpSharePath => isZh ? '共享目录' : 'Share Path';
+  String get toolsHttpStart => isZh ? '启动' : 'Start';
+  String get toolsHttpStop => isZh ? '停止' : 'Stop';
+  String get toolsHttpConnectedClients => isZh ? '连接数' : 'Connections';
+  String get toolsHttpShare => isZh ? '分享' : 'Share';
+  String get toolsFileTransferError => isZh ? '选择文件失败' : 'Failed to select file';
 }
