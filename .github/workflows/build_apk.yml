@@ -34,6 +34,8 @@ jobs:
 
       - name: Build Release APK
         working-directory: apps/flutter_client
+        env:
+          P2WLAN_ALLOW_DEBUG_RELEASE_SIGNING: "1"
         run: flutter build apk --release
 
       - name: Upload APK Artifact
