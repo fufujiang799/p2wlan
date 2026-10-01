@@ -256,7 +256,7 @@ go build -o p2wlan-control .
 go build -o p2wlan-relay ./relay
 ```
 
-CLI 和 daemon 可在仓库根目录构建：
+CLI 和 daemon 可在仓库根目，录构建：
 
 ```bash
 cargo build --release -p p2wlan-cli -p p2wlan-daemon
