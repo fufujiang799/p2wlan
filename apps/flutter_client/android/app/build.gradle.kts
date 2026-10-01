@@ -12,7 +12,7 @@ plugins {
 }
 
 android {
-    namespace = "com.p2wlan.client"
+    namespace = "com.hoomli.chat"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -24,7 +24,7 @@ android {
     defaultConfig {
         // Canonical identity for distributed P2WLAN Android builds. Changing
         // this value creates a distinct installed application identity.
-        applicationId = "com.p2wlan.client"
+        applicationId = "com.hoomli.chat"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

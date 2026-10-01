@@ -1,4 +1,4 @@
-package com.example.p2wlan_flutter_client
+package com.hoomli.chat
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -40,8 +40,8 @@ class P2wlanVpnService : VpnService() {
         private const val MAX_AUTOMATIC_RESTARTS = 8
         private const val HEALTHY_RUNTIME_RESET_DELAY_MS = 30_000L
         private const val NATIVE_MONITOR_INTERVAL_MS = 250L
-        const val ACTION_START = "com.example.p2wlan_flutter_client.action.START"
-        const val ACTION_STOP = "com.example.p2wlan_flutter_client.action.STOP"
+        const val ACTION_START = "com.hoomli.chat.action.START"
+        const val ACTION_STOP = "com.hoomli.chat.action.STOP"
         const val EXTRA_REQUEST_JSON = "request_json"
 
         @Volatile

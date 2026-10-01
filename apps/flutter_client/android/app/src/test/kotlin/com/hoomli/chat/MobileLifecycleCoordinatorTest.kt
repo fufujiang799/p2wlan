@@ -1,4 +1,4 @@
-package com.example.p2wlan_flutter_client
+package com.hoomli.chat
 
 import java.io.File
 import org.junit.Assert.assertEquals
@@ -613,7 +613,7 @@ class MobileLifecycleCoordinatorTest {
         invariants: String,
     ) {
         val exactTestId =
-            "com.example.p2wlan_flutter_client.MobileLifecycleCoordinatorTest#$method"
+            "com.hoomli.chat.MobileLifecycleCoordinatorTest#$method"
         println(
             "MOBILE_LIFECYCLE_RECORD " +
                 "{\"scenario_id\":\"$scenarioId\",\"exact_test_id\":\"$exactTestId\"," +

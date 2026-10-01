@@ -1,4 +1,4 @@
-package com.example.p2wlan_flutter_client
+package com.hoomli.chat
 
 import android.os.ParcelFileDescriptor
 import android.util.Log

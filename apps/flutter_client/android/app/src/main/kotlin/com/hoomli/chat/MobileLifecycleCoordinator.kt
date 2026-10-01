@@ -1,4 +1,4 @@
-package com.example.p2wlan_flutter_client
+package com.hoomli.chat
 
 import java.security.MessageDigest
 import java.util.Locale

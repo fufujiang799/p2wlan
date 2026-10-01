@@ -1,4 +1,4 @@
-package com.example.p2wlan_flutter_client
+package com.hoomli.chat
 
 import java.io.File
 import org.junit.Assert.assertEquals

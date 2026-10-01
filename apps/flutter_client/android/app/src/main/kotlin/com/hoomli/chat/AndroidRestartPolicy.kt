@@ -1,4 +1,4 @@
-package com.example.p2wlan_flutter_client
+package com.hoomli.chat
 
 /**
  * Calculate one bounded automatic-restart step without depending on Android
